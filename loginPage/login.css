@@ -1,0 +1,177 @@
+.main {
+    display: flex;
+    padding: 20px 25px;
+}
+
+.main-left {
+    padding-right: 40px;
+    border-right: 1px solid rgb(212 212 212);
+    width: 60%;
+}
+
+.main-left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 15px;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-input p span {
+    color: red;
+}
+
+
+.login-adres input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid rgb(212 212 212);
+}
+
+.login-adres {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-checkbox {
+    display: flex;
+    gap: 10px;
+    padding: 30px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-btn button {
+    background: gray;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.input-btn button:hover {
+    background: #f7e2e2;
+    color: gray;
+    cursor: not-allowed;
+}
+
+.main-right {
+    padding-left: 40px;
+    width: 40%;
+}
+
+.main-product {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.main-product-info {
+    display: flex;
+    gap: 10px;
+}
+
+.main-product-info p {
+    font-size: 14px;
+    cursor: pointer;
+    height: max-content;
+}
+
+.product-info-img {
+    width: 100px;
+}
+
+.product-info-img img {
+    border-radius: 15px;
+}
+
+.main-product-price {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main-cupon {
+    position: relative;
+}
+
+.main-cupon input {
+    border-radius: 7px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.main-cupon p {
+    color: #5a5757;
+    cursor: pointer;
+}
+
+.main-cupon p {
+   
+    margin-bottom: 30px;
+}
+
+.main-cupon span {
+    position: absolute;
+    top: 38px;
+    right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main-sum,
+.main-cargo,
+.main-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-cargo {
+    padding: 7px 0 12px;
+    border-bottom: 1px solid rgb(212 212 212);
+}
+
+.main-total {
+    padding-top: 13px;
+    font-size: 24px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main-left {
+        padding-right: 0;
+        border-right: none;
+        width: 100%;
+        order: 2;
+    }
+
+    .main-right {
+        padding-left: 0;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 424px) and (max-width: 768px) {
+    .login-form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

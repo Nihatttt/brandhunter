@@ -1,0 +1,64 @@
+.main{
+    padding: 50px 25px 70px;
+}
+
+.main h3 {
+
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.main-brand {
+    gap: 50px 25px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.brand item{
+    height: 85%;
+    border: 1px solid #e5373b;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+
+.brand item img {
+    overflow: hidden;
+}
+
+.brand item p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.brand-item:hover {
+    border: 1px solid #ff000047;
+
+}
+
+@media only screen and (max-width: 827px) {
+
+    .brand-item {
+        height: 65%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .brand-item {
+        height: 85%;
+    }
+
+    .main-brand{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .brand-item{
+        height: 70%;
+    }
+}

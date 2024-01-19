@@ -1,0 +1,175 @@
+.main {
+    padding: 30px 25px;
+    display: flex;
+    gap: 30px;
+}
+
+.main-left {
+    width: 35%;
+}
+
+.order-info{
+    width: 35%;
+}
+
+.order-info h2 {
+    border-bottom: 1px solid #e5e7eb ;
+}
+
+.order-info p span {
+    font-weight: bold;
+
+}
+
+.order-info p{
+    padding: 2px 0;
+}
+
+.order-info h3 {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.order-disc {
+    padding-top: 15px;
+}
+
+.order-disc h4 {
+    font-weight: 500;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+.middle-img img {
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.middle-sliders {
+    position: relative;
+}
+
+.sliders {
+    display: flex;
+    gap: 10px;
+}
+
+.middle-sliders button {
+    position: absolute;
+    bottom: 40px;
+    height: 38px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: inherit;
+    border: 1px solid rgba(128, 128, 128, 0.877);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.leftBtn {
+    left: -60px;
+}
+
+.rightBtn {
+    right: -60px;
+}
+
+.middle-sliders button:hover {
+    background: #ffdcdc;
+    border: none;
+}
+
+.middle-sliders .slider {
+    width: 80px;
+    cursor: pointer;
+}
+
+.middle-sliders .slider img {
+    border-radius: 7px;
+    height: 85px;
+    width: 85px;
+}
+
+.main-right {
+    width: 25%;
+}
+
+.order-size {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.order-size p {
+    font-weight: 300;
+}
+
+.order-size h4 {
+    background: #ffdcdc;
+    cursor: pointer;
+    border: 3px solid black;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+.order-color {
+    padding: 15px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.order-color-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.order-btn button {
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: white;
+    background: gray;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    ;
+}
+
+.order-btn p {
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+    .main-left {
+        width: 70%;
+    }
+
+    .main-right {
+        width: 44%;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main-left {
+        width: 100%;
+    }
+
+    .main-right {
+        width: 100%;
+    }
+
+    .middle-sliders button {
+        display: none;
+    }
+}
